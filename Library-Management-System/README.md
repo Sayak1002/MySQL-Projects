@@ -88,3 +88,67 @@ The database schema includes the following foreign key constraints to establish 
 The Entity-Relationship Diagram (ERD) for the Library Management System is shown below:
 
 ![ERD Diagram](/Library-ERD-PNG.png)
+
+## Tasks
+
+Here is a list of tasks that will be accomplished in the project:
+
+1. **Create a New Book Record**
+   - **Objective:** Insert a new book record into the books table.
+   - **Example:** `978-1-60129-456-2, 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.'`
+
+2. **Update an Existing Member's Address**
+   - **Objective:** Update the address of an existing member.
+
+3. **Delete a Record from the Issued Status Table**
+   - **Objective:** Delete the record with `issued_id = 'IS121'` from the `issued_status` table.
+
+4. **Retrieve All Books Issued by a Specific Employee**
+   - **Objective:** Select all books issued by the employee with `emp_id = 'E101'`.
+
+5. **List Members Who Have Issued More Than One Book**
+   - **Objective:** Use `GROUP BY` to find members who have issued more than one book.
+
+6. **Create Summary Tables**
+   - **Objective:** Use CTAS (CREATE TABLE AS) to generate new tables based on query results, such as the count of books issued for each book.
+
+7. **Retrieve All Books in the Classic Category**
+   - **Objective:** List all books categorized as 'Classic'.
+
+8. **Find Total Rental Income by Category**
+   - **Objective:** Calculate the total rental income for each category of books.
+
+9. **List Members Who Registered in the Last 180 Days**
+   - **Objective:** Find all members who registered within the last 180 days.
+
+10. **List Employees with Their Branch Manager's Name and Branch Details**
+    - **Objective:** Retrieve details of employees along with their branch manager's name and branch information.
+
+11. **Create a Table of Books with Rental Price Above 7.00**
+    - **Objective:** Create a table that lists books with a rental price greater than 7.00.
+
+12. **Retrieve the List of Books Not Yet Returned**
+    - **Objective:** List all books that have not been returned yet.
+
+13. **Identify Members with Overdue Books**
+    - **Objective:** Write a query to identify members with overdue books (assume a 30-day return period). Display member ID, member name, book title, issue date, and days overdue.
+
+14. **Update Book Status on Return**
+    - **Objective:** Write a query to update the status of books in the books table to "Yes" when they are returned, based on entries in the `return_status` table.
+
+15. **Branch Performance Report**
+    - **Objective:** Create a query that generates a performance report for each branch, showing the number of books issued, the number of books returned, and the total revenue generated from book rentals.
+
+16. **CTAS: Create a Table of Active Members**
+    - **Objective:** Use the `CREATE TABLE AS` (CTAS) statement to create a new table `active_members` containing members who have issued at least one book in the last 6 months.
+
+17. **Find Employees with the Most Book Issues Processed**
+    - **Objective:** Write a query to find the top 3 employees who have processed the most book issues. Display employee name, number of books processed, and their branch.
+
+18. **Stored Procedure Objective**
+    - **Objective:** Create a stored procedure to manage the status of books in a library system.
+    - **Description:** Write a stored procedure that updates the status of a book based on its issuance. The procedure should:
+      - Take `book_id` as an input parameter.
+      - Check if the book is available (`status = 'yes'`). If available, issue the book and update the status in the `books` table to 'no'.
+      - If not available (`status = 'no'`), return an error message indicating that the book is currently not available.
+
