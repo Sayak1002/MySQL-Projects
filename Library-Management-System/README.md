@@ -85,4 +85,6 @@ The database schema includes the following foreign key constraints to establish 
   - `issued_id` references `issued_status(issued_id)` (ON DELETE CASCADE)
 
 
+The Entity-Relationship Diagram (ERD) for the Library Management System is shown below:
 
+![ERD Diagram](/Library-ERD-PNG.png)
