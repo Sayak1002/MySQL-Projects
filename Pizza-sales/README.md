@@ -29,6 +29,12 @@ The database `pizza_db` contains the following tables:
 - `pizza_id`: Foreign key linking to the `pizzas` table
 - `quantity`: Number of pizzas ordered
 
+
+### Entity Relationship Diagram (ERD)
+
+![Pizza Sales ERD](/Pizza-Sales-ERD-png.png)
+
+
 ## Questions Addressed
 The following SQL queries were executed to analyze the pizza sales data:
 
@@ -70,10 +76,6 @@ The following SQL queries were executed to analyze the pizza sales data:
 
 13. **Top 3 Pizza Types by Revenue in Each Category**: 
     Determine the top 3 most ordered pizza types based on revenue for each pizza category.
-
-### Entity Relationship Diagram (ERD)
-
-![Pizza Sales ERD](/Pizza-Sales-ERD-png.png)
 
 ## Data Import Method
 All tables were imported into MySQL Workbench via the Table Data Import Wizard, enabling efficient analysis and query execution.
