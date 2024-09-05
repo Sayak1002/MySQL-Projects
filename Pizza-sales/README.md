@@ -73,7 +73,7 @@ The following SQL queries were executed to analyze the pizza sales data:
 
 ### Entity Relationship Diagram (ERD)
 
-![Pizza Sales ERD](Pizza-Sales-ERD-png.png)
+![Pizza Sales ERD](/Pizza-Sales-ERD-png.png)
 
 ## Data Import Method
 All tables were imported into MySQL Workbench via the Table Data Import Wizard, enabling efficient analysis and query execution.
