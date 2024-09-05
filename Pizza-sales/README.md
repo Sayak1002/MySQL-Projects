@@ -63,7 +63,7 @@ The following SQL queries were executed to analyze the pizza sales data:
    Determine the distribution of orders by hour of the day.
 
 9. **Average Pizzas Ordered Per Day**: 
-   Group the orders by date and calculate the average number of pizzas ordered per day.
+   calculate the average number of pizzas ordered per day.
 
 10. **Top 3 Pizza Types by Revenue**: 
     Determine the top 3 most ordered pizza types based on revenue.
